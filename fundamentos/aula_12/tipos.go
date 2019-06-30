@@ -48,7 +48,7 @@ func main() {
 	é
 	Johnny`
 	fmt.Println(s2)
-	fmt.Println("O tamnho da string s2 é", len(s2))
+	fmt.Println("O tamanho da string s2 é", len(s2))
 
 	// char???
 	char := 'a'
