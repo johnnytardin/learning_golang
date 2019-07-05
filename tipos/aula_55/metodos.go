@@ -11,6 +11,7 @@ type pessoa struct {
 }
 
 func (p pessoa) getNomeCompleto() string{
+	// p está associado a estrutura de dados pessoa. Por isso implementa o método.
 	return p.nome + " " + p.sobrenome
 }
 
