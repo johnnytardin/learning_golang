@@ -25,7 +25,7 @@ func UsuarioHandler(w http.ResponseWriter, r *http.Request) {
 
 	switch {
 	case r.Method == "GET" && id > 0:
-		usuarioPorId(w, r, id)
+		usuarioPorID(w, r, id)
 	case r.Method == "GET":
 		usuarioTodos(w, r)
 	default:
@@ -35,8 +35,8 @@ func UsuarioHandler(w http.ResponseWriter, r *http.Request) {
 
 }
 
-// usuarioPorId retorna um usuário específico
-func usuarioPorId(w http.ResponseWriter, r *http.Request, id int) {
+// usuarioPorID retorna um usuário específico
+func usuarioPorID(w http.ResponseWriter, r *http.Request, id int) {
 	db, err := sql.Open("mysql", "root:secret@/cursogo")
 	if err != nil {
 		log.Fatal(err)
